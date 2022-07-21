@@ -142,16 +142,12 @@ body {
   text-align: center;
 }
 
-.header-image {
-  background-image: url(images/laptop.jpg);
-  width: 1380px;
-}
-
 .navbar-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 48px;
-  padding: 50px;
+  padding-top: 40px;
   font-weight: 700;
   font-size: 16px;
   line-height: 15px;
@@ -166,6 +162,7 @@ body {
   font-weight: 700;
   font-size: 82px;
   line-height: 82px;
+  padding: 125px 0 19px;
 }
 
 .typography--h2 {
@@ -173,6 +170,7 @@ body {
   font-size: 30px;
   line-height: 30px;
   color: #8d81ac;
+  padding-bottom: 19px;
 }
 
 .typography--body {
@@ -192,5 +190,11 @@ body {
 .btn--primary {
   background-color: #8d81ac;
   color: #ffffff;
-  padding: 10px 40px;
+  padding: 23px 0 23px;
+  display: block;
+}
+
+.header-button {
+  max-width: 390px;
+  width: 100%;
 }
