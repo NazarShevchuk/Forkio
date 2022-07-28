@@ -126,7 +126,6 @@ table {
 body {
   font-family: "Lato", sans-serif;
   font-family: "Poppins", sans-serif;
-  background-color: #e5e5e5;
 }
 
 .container {
@@ -241,14 +240,22 @@ body {
   width: 100%;
 }
 
-.post-heading {
+.editor {
+  background-color: #ffffff;
+}
+
+.shots-heading {
   margin: 58px 0 65px;
   font-size: 14px;
   line-height: 15px;
   color: #848e97;
 }
 
-.heading {
+.shots-content {
+  margin: 0 50px;
+}
+
+.shots {
   font-weight: 700;
   font-size: 54px;
   line-height: 54px;
@@ -256,14 +263,107 @@ body {
   padding-bottom: 35px;
 }
 
-.post-info {
+.shots-info {
   font-size: 21px;
   line-height: 32px;
-  padding-bottom: 13px;
+  margin: 0 60px;
+  padding: 0 50px 13px;
 }
 
-.post-image {
+.shots-image {
   display: block;
   margin: auto;
   padding-bottom: 70px;
+}
+
+.feature-section {
+  background-color: #f4f4f4;
+  padding: 98px 0 34px 0;
+}
+
+.feature-list {
+  display: flex;
+  flex: 1;
+  gap: 35px;
+  flex-direction: column;
+}
+
+.feature-inner-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 0 0 24px;
+  flex: 4;
+}
+
+.feature-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #323232;
+  padding-bottom: 15px;
+}
+
+.feature-info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #848e97;
+}
+
+.feature-image-wrapper {
+  max-width: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-image {
+  display: block;
+  object-fit: contain;
+}
+
+.image-editor-wrapper {
+  display: flex;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding-right: 30px;
+  min-width: 60px;
+}
+
+.image-editor {
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.feature-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.info {
+  text-align: left;
+  font-size: 48px;
+  line-height: 50px;
+  color: #8d81ac;
+}
+
+.testimonials-wrapper {
+  background-image: url(file:///E:/github/forkio/images/testmonialsbg.png);
 }
