@@ -315,11 +315,10 @@ body {
   line-height: 21px;
   color: #323232;
   padding-bottom: 15px;
+  font-family: "Montserrat";
 }
 
 .feature-info {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #848e97;
@@ -364,6 +363,46 @@ body {
   color: #8d81ac;
 }
 
-.testimonials-wrapper {
-  background-image: url(file:///E:/github/forkio/images/testmonialsbg.png);
+.section-testimonials {
+  background-image: url(https://github.com/ilyastaydope/project-forkio/blob/master/src/img/backgrounds/about.png?raw=true);
+  background-size: cover;
+}
+
+.heading-title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 50px;
+  padding: 110px 0 80px;
+  font-weight: 700;
+}
+
+.testimonials-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 110px 100px;
+  justify-items: center;
+}
+
+.testimonials-item {
+  text-align: center;
+}
+
+.testimonials-image-wrapper {
+  padding-bottom: 30px;
+  height: 60px;
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.testimonials-text {
+  padding: 120px 40px 50px;
+  margin: 0 30px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #a291a5;
 }
