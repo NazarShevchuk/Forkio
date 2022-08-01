@@ -170,8 +170,13 @@ body {
   transform: translate(-50%);
 }
 
-.header-buuton {
+.header-button {
   transform: translateY(50%);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .typography--h1 {
@@ -216,6 +221,12 @@ body {
   margin-right: auto;
   font-size: 24px;
   line-height: 16px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 48px;
 }
 
 .navbar-list {
@@ -279,6 +290,8 @@ body {
 .feature-section {
   background-color: #f4f4f4;
   padding: 98px 0 34px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .feature-list {
@@ -337,17 +350,16 @@ body {
 }
 
 .image-editor-wrapper {
-  display: flex;
-  -webkit-box-flex: 1;
-  flex: 1;
-  padding-right: 30px;
-  min-width: 60px;
+  grid-area: img;
+  position: relative;
+  top: 10px;
+  height: 500px;
 }
 
 .image-editor {
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
 }
 
 .feature-inner {
@@ -405,4 +417,103 @@ body {
   line-height: 21px;
   text-align: center;
   color: #a291a5;
+}
+
+.testimonials-text::after {
+  content: "";
+  display: block;
+  margin: 19px auto 0 auto;
+  max-width: 780px;
+  height: 2px;
+  background: #645766;
+}
+
+.fork-wrapper {
+  background-image: url(https://github.com/ilyastaydope/project-forkio/blob/master/src/img/backgrounds/pricing.png?raw=true);
+}
+
+.fork-heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  padding: 112px 0;
+}
+
+.fork-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 25px;
+  padding: 70px 0;
+}
+
+.fork-item {
+  background: rgba(117, 190, 218, 0.11);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.fork-item--recomended {
+  transform: scale(1.1, 1.1);
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+.fork-item--recomended .fork-item-heading {
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+.fork-item-inner::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 5px;
+  background: #8d81ac;
+  margin-top: 38px;
+}
+
+.fork-item-heading {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 36px 30px;
+  background-color: rgba(255, 255, 255, 0.06);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fork-item-list {
+  padding: 30px 0 36px;
+}
+
+.fork-price {
+  font-size: 60px;
+  line-height: 90px;
+  padding: 16px 0;
+}
+
+.fork-month {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.fork-info {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.btn--secondary {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 15px 37px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.btn {
+  display: flex;
+  margin: 0 auto;
 }
